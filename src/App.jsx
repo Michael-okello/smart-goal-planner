@@ -1,18 +1,18 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 import FinancialGoals  from './components/financialgoal'
 import ProgressCard from './components/ProgressCard'
+import Deposits from "./components/Deposits"; // Adjust path if it's in a different folder
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-   <FinancialGoals />
-   <ProgressCard />
-   </>
+  <>
+  <FinancialGoals />
+  <Deposits />
+  <ProgressCard />
+  </>
   )
 }
 

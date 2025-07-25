@@ -1,22 +1,21 @@
-import react from "react"
-import {useState, useEffect} from "react"
+import React, { useState, useEffect } from "react";
 
-function ProgressCard () {
+function ProgressCard() {
+    const [goals, setGoals] = useState([]);
 
-    const [goals, setGoals] = useState([])
+    useEffect(() => {
+    fetch("https://json-server-deployment-smart-goal-planner.onrender.com/goals")
+    .then(res => res.json())
+    .then(data => setGoals(data));
+    }, []);
 
-    useEffect (() => {
-        fetch("https://json-server-deployment-smart-goal-planner.onrender.com/goals")
-        .then(res => res.json())
-        .then(data => setGoals(data))
-    },[])
+    return (
+    <div className="card">
+    <h2>Goal Card</h2>
+    {JSON.stringify(goals)}
+    <p>Your goals</p>
+    </div>
+    );
+}
 
-    }
-    return(
-        <section>
-            
-        </section>
-    )
-
-
-export default ProgressCard
+export default ProgressCard;

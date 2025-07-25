@@ -14,3 +14,5 @@ function Deposit() {
         </section>
     )
 }
+
+export default Deposit
