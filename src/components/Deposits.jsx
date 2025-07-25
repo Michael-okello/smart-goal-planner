@@ -9,7 +9,7 @@ function Deposit() {
             <h1>Deposits</h1>
             <form method="post">
             <label htmlFor="deposit">Deposit</label>
-            <input id="deposit" type="number" name="deposit" />
+            <input id="deposit" type="number" name="deposit" placeholder="Amount "/>
             </form>
         </section>
     )

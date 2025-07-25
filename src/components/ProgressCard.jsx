@@ -12,7 +12,19 @@ function ProgressCard() {
     return (
     <div className="card">
     <h2>Goal Card</h2>
-    {JSON.stringify(goals)}
+    {goals.map(goal =>(
+        <div key={goal.id} className="goal-card">
+            <h3>{goal.name}</h3>
+            <p><strong>Category:</strong>{goal.category}</p>
+            <p><strong>Target Amount:</strong>${goal.targetAmount}</p>
+            <p><strong>Saved Amount:</strong> ${goal.savedAmount}</p>
+            <p><strong>Deadline:</strong> {goal.deadline}</p>
+            <p>
+                <strong>Progress:</strong>{" "}
+                 {Math.round((goal.savedAmount / goal.targetAmount) * 100)}%
+            </p>
+        </div>
+    ))}
     <p>Your goals</p>
     </div>
     );

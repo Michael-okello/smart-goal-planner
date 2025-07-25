@@ -24,6 +24,8 @@ function FinancialGoals() {
 
         <label htmlFor="deadline">Deadline</label>
         <input id="deadline" type="date" name="deadline" />
+
+        <button>Submit</button>
         
       </form>
       </section>  
