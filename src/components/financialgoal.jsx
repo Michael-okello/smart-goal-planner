@@ -12,7 +12,7 @@ function FinancialGoals() {
     return (
       <section>
       <h1>Add New Goal</h1>
-      <form onSubmit={addGoals} method="POST">
+      <form action={addGoals} >
         <label htmlFor="financialGoal">Financial Goal</label>
         <input id="financialGoal"type="text" name="financialGoal" />
 
