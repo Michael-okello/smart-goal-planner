@@ -34,7 +34,7 @@ Get a full dashboard of your total savings, individual goal balances, and recent
 
 ### View Live Site
 
-Visit the deployed application at: [React Blog App](https://boisterous-salamander-27be56.netlify.app/)
+Visit the deployed application at: [React Blog App](https://smart-goal-planner-ten-eta.vercel.app/)
 
 The live site allows you to:
 
