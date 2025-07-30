@@ -3,7 +3,7 @@ import FinancialGoals from './components/financialgoal';
 import ProgressCard from './components/ProgressCard';
 import Deposits from './components/Deposits';
 import Overview from './components/Overview';
-import ManageGoals from './components/ManageGoals';
+
 function App() {
   const [goals, setGoals] = useState([]);
 
