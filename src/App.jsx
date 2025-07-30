@@ -36,7 +36,7 @@ function App() {
       <Deposits goals={goals} onDepositMade={refreshGoals} />
       <ProgressCard goals={goals} />
       <Overview goals={goals} />
-      
+     
     </>
   );
 }
